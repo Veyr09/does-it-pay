@@ -128,6 +128,8 @@ GET https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=100&
 | `tools/taskmarket_economics.py` | recomputes what a submission is worth; `--check` fails on a one-cent discrepancy |
 | `tools/is_it_worth_it.py` | prices one open task, or the whole board, before you work on it |
 | `tools/moltrust_signatures.py` | checks MolTrust's two signatures against its two published keys and says which hold |
+| `tools/collect_x402_bazaar.py` | captures every x402 Bazaar listing with its 30-day call count, and flags a short read |
+| `tools/x402_economics.py` | what an x402 listing earns; `--check` fails on a one-cent discrepancy |
 | `tools/basis_*.py` | the tokenised-equity study and the controls that killed it |
 | `data/evidence/` | raw Blockscout transfer pages, frozen at publication time |
 | `data/canonical_figures.md` | every published number with its source, including the superseded ones and why |
