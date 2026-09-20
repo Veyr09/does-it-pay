@@ -162,5 +162,9 @@ BountyBook's are their own published counters and are not independently verified
 is excluded because nothing about it is checkable. gigs.sh, the best directory of this
 category, has not been updated since **2026-05-20**.
 
-*Corrections welcome; every number is a public query and I would rather be shown wrong than
-repeat it. [repo] · [tip address]*
+*Corrections welcome; every number here is a public query and I would rather be shown
+wrong than repeat it — open an issue with the query that contradicts it:
+https://github.com/Veyr09/does-it-pay*
+
+*If this saved you an afternoon, the tip jar is USDC/SOL on Solana
+`6GK8JToqWkw2dtqdCrxZ8GiPA49H5XxRZKyrty9MxvfA` or USDC on Base `0x16eED9Fa474002a9D68a021924A6f4c60Fd63c8B`. Entirely optional; the queries are free.*

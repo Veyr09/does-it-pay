@@ -107,3 +107,11 @@ partial correlation against pool liquidity.
 
 Three results, three kills, and what is left is a correct measurement procedure and one
 genuine phenomenon that costs more to trade than it pays. That seems worth writing down.
+
+*Raw series, scripts and every failed test — including the reversion result that did not
+survive its control and the dividend correlation that turned out to be a proxy for
+something exact — are in the repo: https://github.com/Veyr09/does-it-pay*
+
+*Corrections welcome; open an issue with the query that contradicts a number.
+Tip jar, entirely optional: USDC/SOL on Solana `6GK8JToqWkw2dtqdCrxZ8GiPA49H5XxRZKyrty9MxvfA`,
+USDC on Base `0x16eED9Fa474002a9D68a021924A6f4c60Fd63c8B`.*
