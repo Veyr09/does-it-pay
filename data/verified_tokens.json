@@ -1,0 +1,162 @@
+{
+ "SPY": {
+  "symbol": "SPYx",
+  "mint": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+  "pair": "6truu3rZuiB9rKQg4VYC3Dt3QwV7DgwGqXrYUcrvnDDE",
+  "dex": "raydium",
+  "liq_usd": 2914270.07,
+  "last_basis_pct": 0.943
+ },
+ "QQQ": {
+  "symbol": "QQQx",
+  "mint": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+  "pair": "GMjGLWzvK75LPetrgAmdeXnvxc4fUuQPwJxeQqTDU1aG",
+  "dex": "raydium",
+  "liq_usd": 2198866.2,
+  "last_basis_pct": 0.263
+ },
+ "NVDA": {
+  "symbol": "NVDAx",
+  "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+  "pair": "49iMatQtoyabsYAQc8GafVq6aeBFVDxSRH44oiatyyw6",
+  "dex": "raydium",
+  "liq_usd": 2245677.72,
+  "last_basis_pct": 0.117
+ },
+ "TSLA": {
+  "symbol": "TSLAx",
+  "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+  "pair": "8aDaBQkTrS6HVMjyc6EZebgdiaXhLYGriDWKWWp1NpFF",
+  "dex": "raydium",
+  "liq_usd": 2091774.32,
+  "last_basis_pct": 0.14
+ },
+ "AAPL": {
+  "symbol": "AAPLx",
+  "mint": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+  "pair": "ApniVWuZbZoruTAJdyJcLBA4AVw4DKGdV5fHxo6qrAZT",
+  "dex": "raydium",
+  "liq_usd": 246553.32,
+  "last_basis_pct": -0.107
+ },
+ "MSFT": {
+  "symbol": "MSFTx",
+  "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+  "pair": "D6bRhQUcR9B7bPbbqgxpE17MjyUjBtr8hHQCcJoHrrv1",
+  "dex": "raydium",
+  "liq_usd": 389431.05,
+  "last_basis_pct": 0.705
+ },
+ "META": {
+  "symbol": "METAx",
+  "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+  "pair": "3L7KbPVaAQA4UTecaGQYsm6UCq5F3sZM9zAYkxqYt63j",
+  "dex": "raydium",
+  "liq_usd": 360726.83,
+  "last_basis_pct": 0.944
+ },
+ "GLD": {
+  "symbol": "GLDx",
+  "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+  "pair": "78ReVNMLGRWmjtf2HmBoHUe2pRcsctXTTbxJnbhchyze",
+  "dex": "raydium",
+  "liq_usd": 928127.14,
+  "last_basis_pct": 0.441
+ },
+ "CRCL": {
+  "symbol": "CRCLx",
+  "mint": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+  "pair": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV",
+  "dex": "raydium",
+  "liq_usd": 2682209.42,
+  "last_basis_pct": 0.12
+ },
+ "MSTR": {
+  "symbol": "MSTRx",
+  "mint": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+  "pair": "2ngTuP7xA581dqX9uJkGRqxmKuehY3k4SDfPebeoRG2J",
+  "dex": "raydium",
+  "liq_usd": 784045.53,
+  "last_basis_pct": 2.599
+ },
+ "COIN": {
+  "symbol": "COINx",
+  "mint": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
+  "pair": "w7SGmPeXoMCsjvXqgsAmUn56uypyDsjAtsxeVkaiqxa",
+  "dex": "raydium",
+  "liq_usd": 1513843.21,
+  "last_basis_pct": 0.505
+ },
+ "HOOD": {
+  "symbol": "HOODx",
+  "mint": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+  "pair": "DXWbip5LducMAbDSSpLYz9Xik3253EPeAYQufQtx7LXs",
+  "dex": "raydium",
+  "liq_usd": 1402759.64,
+  "last_basis_pct": -0.442
+ },
+ "AMZN": {
+  "symbol": "AMZNx",
+  "mint": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+  "pair": "6m5aXAve4uh6Kt4ytKyCLWNMjd8PYP5vujwNCtycrUiD",
+  "dex": "raydium",
+  "liq_usd": 304793.52,
+  "last_basis_pct": 0.197
+ },
+ "GOOGL": {
+  "symbol": "GOOGLx",
+  "mint": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+  "pair": "B8YAwjGYk6qidWzGBXMAxP7nYfG8g74EZ3Y4gFSsobRw",
+  "dex": "raydium",
+  "liq_usd": 401562.54,
+  "last_basis_pct": 0.298
+ },
+ "INTC": {
+  "symbol": "INTCx",
+  "mint": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+  "pair": "6KoZB86BFDk6TZbB4CTBoAA8PPbpmEwSWFjCyfkt1Uw4",
+  "dex": "raydium",
+  "liq_usd": 45391.16,
+  "last_basis_pct": -0.221
+ },
+ "PLTR": {
+  "symbol": "PLTRx",
+  "mint": "XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4",
+  "pair": "5bY2fh9rgTYaBDxFGFJmddhaDkm5zwiWP6b2ZsjJZyP",
+  "dex": "orca",
+  "liq_usd": 199270.52,
+  "last_basis_pct": -1.272
+ },
+ "ORCL": {
+  "symbol": "ORCLx",
+  "mint": "XsjFwUPiLofddX5cWFHW35GCbXcSu1BCUGfxoQAQjeL",
+  "pair": "GWjPMHYsmdosbMCPx14N627qf5WhpaxAwNBRCfqP9CM9",
+  "dex": "raydium",
+  "liq_usd": 20451.03,
+  "last_basis_pct": 0.02
+ },
+ "AVGO": {
+  "symbol": "AVGOx",
+  "mint": "XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo",
+  "pair": "EkpbWmPzrzFsv2xkJRdvWs61aRuDBVdrJK7WQmctBFnB",
+  "dex": "raydium",
+  "liq_usd": 143043.14,
+  "last_basis_pct": 0.898
+ },
+ "KO": {
+  "symbol": "KOx",
+  "mint": "XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ",
+  "pair": "BG7f49R2sb2UBCMu3AHuDmgDRyzqVgeMpDEk9S9gvQhy",
+  "dex": "orca",
+  "liq_usd": 96287.53,
+  "last_basis_pct": 2.844
+ },
+ "MCD": {
+  "symbol": "MCDx",
+  "mint": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2",
+  "pair": "5MGvNj9RNKNmzwp1LtZuQkZonEYtKJ3JuiyNQEUU2DsF",
+  "dex": "raydium",
+  "liq_usd": 557081.41,
+  "last_basis_pct": 2.82
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "SPY": {
+  "multiplier": 1.003909240011759,
+  "new": 1.005714560286254,
+  "effective_ts": 1781755200,
+  "effective": 1.005714560286254
+ },
+ "NVDA": {
+  "multiplier": 1.0009180758490996,
+  "new": 1.001701196801074,
+  "effective_ts": 1789000200,
+  "effective": 1.001701196801074
+ },
+ "GLD": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "CRCL": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "QQQ": {
+  "multiplier": 1.0027250296551051,
+  "new": 1.0034560758968376,
+  "effective_ts": 1789858800,
+  "effective": 1.0027250296551051
+ },
+ "MSFT": {
+  "multiplier": 1.0045820905025638,
+  "new": 1.0059033904787456,
+  "effective_ts": 1787185800,
+  "effective": 1.0059033904787456
+ },
+ "MSTR": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "HOOD": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "META": {
+  "multiplier": 1.002298265651938,
+  "new": 1.0028515433272898,
+  "effective_ts": 1789777800,
+  "effective": 1.0028515433272898
+ },
+ "MCD": {
+  "multiplier": 1.0161604345481776,
+  "new": 1.0211807004882871,
+  "effective_ts": 1788222600,
+  "effective": 1.0211807004882871
+ },
+ "COIN": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "GOOGL": {
+  "multiplier": 1.001926722393864,
+  "new": 1.0023772500603487,
+  "effective_ts": 1788481800,
+  "effective": 1.0023772500603487
+ },
+ "AAPL": {
+  "multiplier": 1.0026642075893797,
+  "new": 1.0032690125398187,
+  "effective_ts": 1786149000,
+  "effective": 1.0032690125398187
+ },
+ "PLTR": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "KO": {
+  "multiplier": 1.0183317967386898,
+  "new": 1.0225601246249238,
+  "effective_ts": 1789432200,
+  "effective": 1.0225601246249238
+ },
+ "AMZN": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "INTC": {
+  "multiplier": 1.0,
+  "new": 1.0,
+  "effective_ts": 0,
+  "effective": 1.0
+ },
+ "AVGO": {
+  "multiplier": 1.0048837684862768,
+  "new": 1.0061623180646875,
+  "effective_ts": 1789777800,
+  "effective": 1.0061623180646875
+ },
+ "ORCL": {
+  "multiplier": 1.0068751347045037,
+  "new": 1.009318667481834,
+  "effective_ts": 1783643400,
+  "effective": 1.009318667481834
+ },
+ "TSLA": {
+  "multiplier": 1.0,
+  "new": null,
+  "effective_ts": null,
+  "effective": 1.0,
+  "note": "no scaledUiAmountConfig extension on the mint; treated as 1.0"
+ }
+}

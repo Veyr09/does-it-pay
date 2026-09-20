@@ -1,0 +1,877 @@
+{
+ "SPYx": {
+  "mint": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+  "name": "SP500 xStock",
+  "liq": 7240284.508802159,
+  "price": 765.0337014506734,
+  "holders": 72880
+ },
+ "SPCXx": {
+  "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+  "name": "SpaceX xStock",
+  "liq": 1523063.1319020656,
+  "price": 151.59059284730023,
+  "holders": 28104
+ },
+ "NVDAx": {
+  "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+  "name": "NVIDIA xStock",
+  "liq": 2147411.6210311325,
+  "price": 221.7945959248165,
+  "holders": 94860
+ },
+ "GLDx": {
+  "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+  "name": "Gold xStock",
+  "liq": 1035732.5495373422,
+  "price": 402.5130591738331,
+  "holders": 28896
+ },
+ "CRCLx": {
+  "mint": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+  "name": "Circle xStock",
+  "liq": 2335981.005748759,
+  "price": 91.8506923004122,
+  "holders": 19748
+ },
+ "QQQx": {
+  "mint": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+  "name": "Nasdaq xStock",
+  "liq": 1882315.5889393752,
+  "price": 721.1193548787933,
+  "holders": 37563
+ },
+ "MSFTx": {
+  "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+  "name": "Microsoft xStock",
+  "liq": 599816.9856968533,
+  "price": 494.96165125262394,
+  "holders": 24842
+ },
+ "MSTRx": {
+  "mint": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+  "name": "MicroStrategy xStock",
+  "liq": 1141350.9746668474,
+  "price": 157.52628195050679,
+  "holders": 13253
+ },
+ "HOODx": {
+  "mint": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+  "name": "Robinhood xStock",
+  "liq": 1193741.6882446902,
+  "price": 119.9791432628233,
+  "holders": 12871
+ },
+ "METAx": {
+  "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+  "name": "Meta xStock",
+  "liq": 380058.26366269484,
+  "price": 668.2677601809659,
+  "holders": 13781
+ },
+ "MCDx": {
+  "mint": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2",
+  "name": "McDonald's xStock",
+  "liq": 824541.079545137,
+  "price": 252.37933864356611,
+  "holders": 19658
+ },
+ "COINx": {
+  "mint": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
+  "name": "Coinbase xStock",
+  "liq": 1385019.9083815417,
+  "price": 195.14004712323455,
+  "holders": 8794
+ },
+ "TSLAx": {
+  "mint": "BBjYZrpeuA12Fd6oBu5D34UwKqAZ1Xak71NdqffMqamL",
+  "name": "xStocks Tesla",
+  "liq": null,
+  "price": null,
+  "holders": 5
+ },
+ "GOOGLx": {
+  "mint": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+  "name": "Alphabet xStock",
+  "liq": 401562.9060804994,
+  "price": 349.14991468936427,
+  "holders": 27819
+ },
+ "AAPLx": {
+  "mint": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+  "name": "Apple xStock",
+  "liq": 597766.9327826634,
+  "price": 334.21017657781493,
+  "holders": 32608
+ },
+ "PLTRx": {
+  "mint": "XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4",
+  "name": "Palantir xStock",
+  "liq": 346129.24397223676,
+  "price": 176.45031046129762,
+  "holders": 7360
+ },
+ "STRCx": {
+  "mint": "Xs78JED6PFZxWc2wCEPspZW9kL3Se5J7L5TChKgsidH",
+  "name": "Strategy PP Variable xStock",
+  "liq": 471753.6221110623,
+  "price": 98.67847099311615,
+  "holders": 4597
+ },
+ "KOx": {
+  "mint": "XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ",
+  "name": "Coca-Cola xStock",
+  "liq": 176194.15504070895,
+  "price": 88.14426970312661,
+  "holders": 5298
+ },
+ "GMEx": {
+  "mint": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc",
+  "name": "Gamestop xStock",
+  "liq": 226184.9284562273,
+  "price": 22.364889777413207,
+  "holders": 12694
+ },
+ "AMZNx": {
+  "mint": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+  "name": "Amazon xStock",
+  "liq": 240139.92021967476,
+  "price": 254.56262505486563,
+  "holders": 14517
+ },
+ "VIDAx": {
+  "mint": "XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk",
+  "name": "Vida Global xStock",
+  "liq": 45008.66484005235,
+  "price": 1.962108402860575,
+  "holders": 4777
+ },
+ "BRK.Bx": {
+  "mint": "Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x",
+  "name": "Berkshire Hathaway xStock",
+  "liq": 103119.48088464847,
+  "price": 507.7452043523848,
+  "holders": 4957
+ },
+ "DFDVx": {
+  "mint": "Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy",
+  "name": "DFDV xStock",
+  "liq": 99660.2635810784,
+  "price": 5.6409133381889145,
+  "holders": 4141
+ },
+ "INTCx": {
+  "mint": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+  "name": "Intel xStock",
+  "liq": 43739.4615052667,
+  "price": 109.02642412999788,
+  "holders": 2544
+ },
+ "AVGOx": {
+  "mint": "XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo",
+  "name": "Broadcom xStock",
+  "liq": 50653.82004805495,
+  "price": 354.9461772681434,
+  "holders": 860
+ },
+ "TQQQx": {
+  "mint": "XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc",
+  "name": "TQQQ xStock",
+  "liq": 52926.07612681768,
+  "price": 72.25532024059557,
+  "holders": 713
+ },
+ "Vx": {
+  "mint": "XsqgsbXwWogGJsNcVZ3TyVouy2MbTkfCFhCGGGcQZ2p",
+  "name": "Visa xStock",
+  "liq": 4250.442713246383,
+  "price": 556.5754743391273,
+  "holders": 2700
+ },
+ "AMDx": {
+  "mint": "XsXcJ6GZ9kVnjqGsjBnktRcuwMBmvKWh8S93RefZ1rF",
+  "name": "AMD xStock",
+  "liq": 12882.649596213208,
+  "price": 548.0158910010515,
+  "holders": 3225
+ },
+ "WMTx": {
+  "mint": "Xs151QeqTCiuKtinzfRATnUESM2xTU6V9Wy8Vy538ci",
+  "name": "Walmart xStock",
+  "liq": 9244.404444327434,
+  "price": 106.53732027361042,
+  "holders": 2284
+ },
+ "XOMx": {
+  "mint": "XsaHND8sHyfMfsWPj6kSdd5VwvCayZvjYgKmmcNL5qh",
+  "name": "Exxon Mobil xStock",
+  "liq": 9922.046966619511,
+  "price": 159.47472649452004,
+  "holders": 3700
+ },
+ "ORCLx": {
+  "mint": "XsjFwUPiLofddX5cWFHW35GCbXcSu1BCUGfxoQAQjeL",
+  "name": "Oracle xStock",
+  "liq": 4223.850657228696,
+  "price": 144.79022508949578,
+  "holders": 1000
+ },
+ "NFLXx": {
+  "mint": "XsEH7wWfJJu2ZT3UCFeVfALnVA6CP5ur7Ee11KmzVpL",
+  "name": "Netflix xStock",
+  "liq": 2733.4667262499097,
+  "price": 72.50929764731697,
+  "holders": 3611
+ },
+ "PEPx": {
+  "mint": "Xsv99frTRUeornyvCfvhnDesQDWuvns1M852Pez91vF",
+  "name": "PepsiCo xStock",
+  "liq": 1851.7009362415022,
+  "price": 130.51196766946265,
+  "holders": 150
+ },
+ "CVXx": {
+  "mint": "XsNNMt7WTNA2sV3jrb1NNfNgapxRF5i4i6GcnTRRHts",
+  "name": "Chevron xStock",
+  "liq": 2808.082979442303,
+  "price": 206.47247681317373,
+  "holders": 406
+ },
+ "NVOx": {
+  "mint": "XsfAzPzYrYjd4Dpa9BU3cusBsvWfVB9gBcyGC87S57n",
+  "name": "Novo Nordisk xStock",
+  "liq": 3614.0101809399425,
+  "price": 41.88992830817377,
+  "holders": 1492
+ },
+ "TSMx": {
+  "mint": "XsafvsGtzFqqHgTnA3aPC83EAMkacU5mcGtcSayhpVV",
+  "name": "TSMC xStock",
+  "liq": 2660.627308552988,
+  "price": 435.2690543095259,
+  "holders": 192
+ },
+ "MRVLx": {
+  "mint": "XsuxRGDzbLjnJ72v74b7p9VY6N66uYgTCyfwwRjVCJA",
+  "name": "Marvell xStock",
+  "liq": 2581.360501476519,
+  "price": 239.30183138884655,
+  "holders": 383
+ },
+ "UNHx": {
+  "mint": "XszvaiXGPwvk2nwb3o9C1CX4K6zH8sez11E6uyup6fe",
+  "name": "UnitedHealth xStock",
+  "liq": 7072.900329872652,
+  "price": 371.58032483458413,
+  "holders": 1059
+ },
+ "AMBRx": {
+  "mint": "XsaQTCgebC2KPbf27KUhdv5JFvHhQ4GDAPURwrEhAzb",
+  "name": "AMBRx xStock",
+  "liq": 968.994784836183,
+  "price": 1.9625762728077012,
+  "holders": 573
+ },
+ "LLYx": {
+  "mint": "Xsnuv4omNoHozR6EEW5mXkw8Nrny5rB3jVfLqi6gKMH",
+  "name": "Eli Lilly xStock",
+  "liq": 4284.716613295939,
+  "price": 1130.8866337073412,
+  "holders": 612
+ },
+ "JPMx": {
+  "mint": "XsMAqkcKsUewDrzVkait4e5u4y8REgtyS7jWgCpLV2C",
+  "name": "JPMorgan Chase xStock",
+  "liq": 1099.7103909003583,
+  "price": 345.3510204868351,
+  "holders": 1265
+ },
+ "SNDKx": {
+  "mint": "Xswbpc8UqU6e1j9QZEWCjBMjyvz4twqD7PCy6j2e7jj",
+  "name": "Sandisk Corporation xStock",
+  "liq": 295.90128993364976,
+  "price": 1709.5142486406787,
+  "holders": 221
+ },
+ "BMNRx": {
+  "mint": "XsrBCwaH8c46xiqXBChzobgufRKxQxAWUWbndgBNzFn",
+  "name": "Bitmine xStock",
+  "liq": 1535.249981920165,
+  "price": 26.024063873638205,
+  "holders": 126
+ },
+ "PGx": {
+  "mint": "XsYdjDjNUygZ7yGKfQaB6TxLh2gC6RRjzLtLAGJrhzV",
+  "name": "Procter & Gamble xStock",
+  "liq": 1318.5420919184003,
+  "price": 146.66245705757174,
+  "holders": 199
+ },
+ "AZNx": {
+  "mint": "Xs3ZFkPYT2BN7qBMqf1j1bfTeTm1rFzEFSsQ1z3wAKU",
+  "name": "AstraZeneca xStock",
+  "liq": 1281.0312864168961,
+  "price": 162.0190170814769,
+  "holders": 464
+ },
+ "LINx": {
+  "mint": "XsSr8anD1hkvNMu8XQiVcmiaTP7XGvYu7Q58LdmtE8Z",
+  "name": "Linde xStock",
+  "liq": 843.0233774626867,
+  "price": 452.4480030126691,
+  "holders": 81
+ },
+ "MAx": {
+  "mint": "XsApJFV9MAktqnAc6jqzsHVujxkGm9xcSUffaBoYLKC",
+  "name": "Mastercard xStock",
+  "liq": 438.77746007358996,
+  "price": 558.4120265512802,
+  "holders": 152
+ },
+ "PFEx": {
+  "mint": "XsAtbqkAP1HJxy7hFDeq7ok6yM43DQ9mQ1Rh861X8rw",
+  "name": "Pfizer xStock",
+  "liq": 221.95388870225565,
+  "price": 26.74227712607093,
+  "holders": 151
+ },
+ "ABTx": {
+  "mint": "XsHtf5RpxsQ7jeJ9ivNewouZKJHbPxhPoEy6yYvULr7",
+  "name": "Abbott xStock",
+  "liq": 443.9446117157419,
+  "price": 102.84816762363944,
+  "holders": 205
+ },
+ "IBMx": {
+  "mint": "XspwhyYPdWVM8XBHZnpS9hgyag9MKjLRyE3tVfmCbSr",
+  "name": "International Business Machines xStock",
+  "liq": 1558.9078477185305,
+  "price": 250.23326423693138,
+  "holders": 182
+ },
+ "SKHYx": {
+  "mint": "XsnhgGRQwhExfS2bmWzR6EYddKGPRGDEjeJsatkmKqU",
+  "name": "SK hynix xStock",
+  "liq": 649.6904592399662,
+  "price": 199.66985937902368,
+  "holders": 100
+ },
+ "CMCSAx": {
+  "mint": "XsvKCaNsxg2GN8jjUmq71qukMJr7Q1c5R2Mk9P8kcS8",
+  "name": "Comcast xStock",
+  "liq": 651.4641724416996,
+  "price": 22.169108520270463,
+  "holders": 85
+ },
+ "VTIx": {
+  "mint": "XsssYEQjzxBCFgvYFFNuhJFBeHNdLWYeUSP8F45cDr9",
+  "name": "Vanguard xStock",
+  "liq": 914.2569422391962,
+  "price": 367.04758196784536,
+  "holders": 95
+ },
+ "BACx": {
+  "mint": "XswsQk4duEQmCbGzfqUUWYmi7pV7xpJ9eEmLHXCaEQP",
+  "name": "Bank of America xStock",
+  "liq": 839.180893038675,
+  "price": 63.82331070687228,
+  "holders": 42
+ },
+ "CRMx": {
+  "mint": "XsczbcQ3zfcgAEt9qHQES8pxKAVG5rujPSHQEXi4kaN",
+  "name": "Salesforce xStock",
+  "liq": 46.28419145775884,
+  "price": 251.56419348092845,
+  "holders": 61
+ },
+ "MRKx": {
+  "mint": "XsnQnU7AdbRZYe2akqqpibDdXjkieGFfSkbkjX1Sd1X",
+  "name": "Merck xStock",
+  "liq": 122.7524250419628,
+  "price": 149.18641088897604,
+  "holders": 137
+ },
+ "CSCOx": {
+  "mint": "Xsr3pdLQyXvDJBFgpR5nexCEZwXvigb8wbPYp4YoNFf",
+  "name": "Cisco xStock",
+  "liq": 303.59882340805456,
+  "price": 107.80257506899743,
+  "holders": 85
+ },
+ "APPx": {
+  "mint": "XsPdAVBi8Zc1xvv53k4JcMrQaEDTgkGqKYeh7AYgPHV",
+  "name": "AppLovin xStock",
+  "liq": 34.4392103572434,
+  "price": 310.3305178042521,
+  "holders": 39
+ },
+ "XLEx": {
+  "mint": "Xs54CrhmpVp6uxZXwgSTegrRH2kShh88XFPzgf4BExu",
+  "name": "Energy Select Sector SPDR Fund xStock",
+  "liq": 370.14076260590804,
+  "price": 64.60122036524682,
+  "holders": 31
+ },
+ "MUx": {
+  "mint": "XsQLZycSZ7QnBBdBXQaTbQdiUcbRqjNJgyBGAMzhHav",
+  "name": "Micron Technology xStock",
+  "liq": 279.4251546058098,
+  "price": 999.1964012512566,
+  "holders": 220
+ },
+ "HONx": {
+  "mint": "XsRbLZthfABAPAfumWNEJhPyiKDW6TvDVeAeW7oKqA2",
+  "name": "Honeywell xStock",
+  "liq": 205.28739059170798,
+  "price": 205.11256447451984,
+  "holders": 43
+ },
+ "VTx": {
+  "mint": "XsEdDDTcVGJU6nvdRdVnj53eKTrsCkvtrVfXGmUK68V",
+  "name": "Vanguard Total World xStock",
+  "liq": 164.511798764296,
+  "price": 158.23300544458274,
+  "holders": 126
+ },
+ "IWMx": {
+  "mint": "XsbELVbLGBkn7xfMfyYuUipKGt1iRUc2B7pYRvFTFu3",
+  "name": "Russell 2000 xStock",
+  "liq": 151.98731767964068,
+  "price": 296.65114307865355,
+  "holders": 22
+ },
+ "GSx": {
+  "mint": "XsgaUyp4jd1fNBCxgtTKkW64xnnhQcvgaxzsbAq5ZD1",
+  "name": "Goldman Sachs xStock",
+  "liq": 144.19389332657067,
+  "price": 1033.4748351000412,
+  "holders": 76
+ },
+ "PMx": {
+  "mint": "Xsba6tUnSjDae2VcopDB6FGGDaxRrewFCDa5hKn5vT3",
+  "name": "Philip Morris xStock",
+  "liq": 140.20841620545576,
+  "price": 186.73299740957728,
+  "holders": 62
+ },
+ "ACNx": {
+  "mint": "Xs5UJzmCRQ8DWZjskExdSQDnbE6iLkRu2jjrRAB1JSU",
+  "name": "Accenture xStock",
+  "liq": 138.35479990798476,
+  "price": 195.55357723337286,
+  "holders": 75
+ },
+ "ASTSx": {
+  "mint": "XsR4LAtaBgTKTRUhiijY1ba13nx4bepeEcag2Pr4dZ1",
+  "name": "AST SpaceMobile xStock",
+  "liq": 119.98010094964181,
+  "price": 187.35901193634,
+  "holders": 25
+ },
+ "UBERx": {
+  "mint": "XsAsZLF4MmsvS1sDxRMrUz7REjHfwbC9UAMXSRBqgEB",
+  "name": "Uber xStock",
+  "liq": 79.95446196923115,
+  "price": 71.16391689989075,
+  "holders": 60
+ },
+ "ADBEx": {
+  "mint": "XsDZMGEU8zadWFCkTtPBoPWYcUX3JHVmghnwf2Mve2q",
+  "name": "Adobe xStock",
+  "liq": 0.5405614072523904,
+  "price": 162.4089670400392,
+  "holders": 34
+ },
+ "BTBTx": {
+  "mint": "XsPLBFy59Q3hY59KLAJur8QyvziMF4xUxGTxXqXE7cT",
+  "name": "Bit Digital xStock",
+  "liq": 1.9994591148068448,
+  "price": 1.6780452700239374,
+  "holders": 18
+ },
+ "SBETx": {
+  "mint": "XsEoih2x6nZuUjFwzGoba6MFmtzCkzW2c4YAm6baQbq",
+  "name": "SharpLink Gaming xStock",
+  "liq": 53.518857068542694,
+  "price": 8.260509980909926,
+  "holders": 25
+ },
+ "TMOx": {
+  "mint": "Xs8drBWy3Sd5QY3aifG9kt9KFs2K3PGZmx7jWrsrk57",
+  "name": "Thermo Fisher xStock",
+  "liq": 52.36582916580056,
+  "price": 600.4534852775104,
+  "holders": 111
+ },
+ "ASMLx": {
+  "mint": "XshuHQ6o6SVpUNawvnnTMxsZ4tacZsNgVCLorv7TkFq",
+  "name": "ASML xStock",
+  "liq": 52.013204818262096,
+  "price": 1648.9954633935085,
+  "holders": 66
+ },
+ "CRWDx": {
+  "mint": "Xs7xXqkcK7K8urEqGg52SECi79dRp2cEKKuYjUePYDw",
+  "name": "CrowdStrike xStock",
+  "liq": 48.45169142765738,
+  "price": 157.7419640646059,
+  "holders": 122
+ },
+ "RIOTx": {
+  "mint": "Xs31mE5EiqjSHEaiX9QDKCN6NvSGCqpJ6f1FNq2wri5",
+  "name": "Riot Platforms xStock",
+  "liq": 43.72961851996912,
+  "price": 20.814374246785732,
+  "holders": 28
+ },
+ "JNJx": {
+  "mint": "XsGVi5eo1Dh2zUpic4qACcjuWGjNv8GCt3dm5XcX6Dn",
+  "name": "Johnson & Johnson xStock",
+  "liq": 33.48168509836005,
+  "price": 267.31459516965,
+  "holders": 109
+ },
+ "URAx": {
+  "mint": "Xsq9sEQjYiUTSZ55RrbHAzVfz8HotwFGrqgxkgiv4LB",
+  "name": "Global X Uranium ETF xStock",
+  "liq": 26.902431314572045,
+  "price": 43.10498999373625,
+  "holders": 36
+ },
+ "SCHFx": {
+  "mint": "XsWAnFM77x6YvpdaZoos79R12o4Yj4r7EVkaTWddzhU",
+  "name": "Schwab International Equity xStock",
+  "liq": 24.23317680804551,
+  "price": 81.66616842874916,
+  "holders": 30
+ },
+ "USARx": {
+  "mint": "XsJJneENiaBPqqcdK1gMsfwi9cbw111azigzRYHoctX",
+  "name": "USA Rare Earth Inc. xStock",
+  "liq": 1.0566692698619156,
+  "price": 15.604536974678542,
+  "holders": 34
+ },
+ "SATAx": {
+  "mint": "XsAxB3xLnt7xto5ChiSbVNHBoXcXzKuzS7FieiNYwtY",
+  "name": "Strive, Inc. Series A Preferred xStock",
+  "liq": 21.71303857590876,
+  "price": 100.10074818302353,
+  "holders": 13
+ },
+ "WENx": {
+  "mint": "Xs4uNhvBDAcp2mz3g9XR5q3vzLgmF1ANWxJgWk2d5u3",
+  "name": "Wendy's xStock",
+  "liq": null,
+  "price": 6.79034001725441,
+  "holders": 13
+ },
+ "IJRx": {
+  "mint": "XsyZcb97BzETAqi9BoP2C9D196MiMNBisGMVNje2Thz",
+  "name": "S&P Small Cap xStock",
+  "liq": 19.012162430100116,
+  "price": 138.77863411654099,
+  "holders": 20
+ },
+ "BSPx": {
+  "mint": "XsYMHtwJcWon5GkPHzdDbCCztKtKzEurJnbydxgjsqS",
+  "name": "Bending Spoons xStock",
+  "liq": 16.49520573401025,
+  "price": 38.25866284847093,
+  "holders": 95
+ },
+ "KLACx": {
+  "mint": "Xsw2uU1i8tHjbgstUbtt3m6kg7BS7AgG5aj8z7ddmmN",
+  "name": "KLA Corporation xStock",
+  "liq": 3.7742507394966593,
+  "price": null,
+  "holders": 19
+ },
+ "PYPLx": {
+  "mint": "XshWQWYVp5ff8CrAEsGmLVKD47nBWi3Ygn5v8wXK27G",
+  "name": "PayPal xStock",
+  "liq": 0.051483932695078616,
+  "price": 52.78039668284739,
+  "holders": 35
+ },
+ "ABBVx": {
+  "mint": "XswbinNKyPmzTa5CskMbCPvMW6G5CMnZXZEeQSSQoie",
+  "name": "AbbVie xStock",
+  "liq": 2.4623965200084488,
+  "price": 294.57292076383493,
+  "holders": 56
+ },
+ "RBLXx": {
+  "mint": "Xss5RAku5EH6UViFdvW7ss9xQjwQLsrs2opPMhb3k43",
+  "name": "Roblox xStock",
+  "liq": 1.925686120172297,
+  "price": 47.324644795978394,
+  "holders": 46
+ },
+ "SGOVx": {
+  "mint": "XsYD72ntjj7ZwoFDZCDmN2gamTcLpnywqvG7PQN5vCN",
+  "name": "iShares 0-3 Month Treasury Bond ETF xStock",
+  "liq": 1.2973267461262885,
+  "price": null,
+  "holders": 14
+ },
+ "VUGx": {
+  "mint": "XsNVBwVGqtDqmA2Waoiux5mfykH8nepLK74z3ZoQWK2",
+  "name": "Vanguard Growth ETF xStock",
+  "liq": 1.2558289142873091,
+  "price": null,
+  "holders": 14
+ },
+ "ANETx": {
+  "mint": "XsrsM2RgtYxXqxmy4iWgxQJUkkHG1U5wzi74sVNUW8m",
+  "name": "Arista Networks, Inc. xStock",
+  "liq": 1.20827704488227,
+  "price": null,
+  "holders": 11
+ },
+ "AMATx": {
+  "mint": "XsQZdaWUAGC4R3fgD2N1fupKvJfJq6YM51ccnsLUWFA",
+  "name": "Applied Materials, Inc. xStock",
+  "liq": 1.0118658794785511,
+  "price": null,
+  "holders": 15
+ },
+ "RRXx": {
+  "mint": "XszxuQCqE72vU4ABTFDFwhs28AeSUHqzbWWVWDkhfYZ",
+  "name": "Regal Rexnord xStock",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "SOLSx": {
+  "mint": "XszuTk3Rr5HXpV7Nrfpg7KAZJfDccPAYLKBsRbLYRx4",
+  "name": "Solstice Advanced Materials xStock",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "MOx": {
+  "mint": "XsztStxbbGZE63p8DyD8YCpzyWFJwwy2PNcyaf3cZz8",
+  "name": "Altria xStock",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "HPEx": {
+  "mint": "Xszp97B7zgeyNUFkymHdxXp3Y5KTZ1rzd2bAL9TW34t",
+  "name": "Hewlett Packard Enterprise xStock",
+  "liq": null,
+  "price": 59.55417380745938,
+  "holders": 12
+ },
+ "SYYx": {
+  "mint": "XszobR4az4oYsssmwsFov326662q84g7UPXzRgrGvfS",
+  "name": "Sysco xStock",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "BURLx": {
+  "mint": "Xszn8sMqeBqfLDXAsDa9uEYo6WT3LYSD4jje2pGK6k5",
+  "name": "Burlington Stores xStock",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "TEFx": {
+  "mint": "Xszk5DEpbPsFaqHJKR7ScBye5HwxxyxV9kmmVUvhTmD",
+  "name": "Telef\u00c3\u00b3nica xStock",
+  "liq": null,
+  "price": null,
+  "holders": 3
+ },
+ "HDx": {
+  "mint": "XszjVtyhowGjSC5odCqBpW1CtXXwXjYokymrk7fGKD3",
+  "name": "Home Depot xStock",
+  "liq": null,
+  "price": null,
+  "holders": 16
+ },
+ "ARWRx": {
+  "mint": "Xszh2XpEww4ndD8CyFzD5DcmqXpw7HMkEdSU1Ngunbe",
+  "name": "Arrowhead Pharmaceuticals xStock",
+  "liq": null,
+  "price": null,
+  "holders": 2
+ },
+ "XSTOCKS": {
+  "mint": "F4LKadwiPXYb27FPKDndwkLiZZxdeqbzxV1BsEipKDP5",
+  "name": "XStocks",
+  "liq": null,
+  "price": null,
+  "holders": 16
+ },
+ "LNCH": {
+  "mint": "7TQjXWvgpjYptdYaCoC5sqQBr1FgE2KrTY4eC2yHEjwq",
+  "name": "Lnch xStocks",
+  "liq": 2.2168854068838036e-07,
+  "price": 3.096023515711475e-06,
+  "holders": 1
+ },
+ "Orclx": {
+  "mint": "2QRHaXoikLjVyATk8NmgLwbcaqb532KjHUxHeiVLpump",
+  "name": "Oracle xstocks",
+  "liq": 2982.8222627069385,
+  "price": 2.783664820769966e-06,
+  "holders": 1
+ },
+ "XSTOCK": {
+  "mint": "DzXAyHKYFpGG4KWaFKbFGXjCCMiuAYP4KM65Qhj1LuqF",
+  "name": "XSTOCKS",
+  "liq": null,
+  "price": null,
+  "holders": 1
+ },
+ "xStocks": {
+  "mint": "ERejnbzHDt7DCfB3NWsPMxSiJfY7wKgJK2GgZHxKXSnB",
+  "name": "xStocks",
+  "liq": 0.017310543113108784,
+  "price": null,
+  "holders": 22
+ },
+ "STOCKSMINE": {
+  "mint": "Bvrj8tscEdkhzWV9kTTZBFMk1Q15UhyRXPMkq98A2QeD",
+  "name": "xStocksMine",
+  "liq": 9.865176210953556e-08,
+  "price": null,
+  "holders": 25
+ },
+ "xstocks": {
+  "mint": "FrSFRu7UupDRvQ3Ew5w11GmdaRnxFy8XuLCPYr3Cpump",
+  "name": "xStocks",
+  "liq": 3069.2381983985906,
+  "price": 2.879154369033567e-06,
+  "holders": 1
+ },
+ "Xstocks": {
+  "mint": "4PKNESEhTVxwynH295oa7zjTbw2ByRV1gpQ4tkzih54H",
+  "name": "Binance Xstocks",
+  "liq": 1.655432869279086,
+  "price": null,
+  "holders": 2
+ },
+ "STONK": {
+  "mint": "FGCXGvCnjBTojQwWRXyFPJsEUxg6JM8tAvnxtk7bpump",
+  "name": "stonk.cash - degen xStocks",
+  "liq": 2210.4217827142797,
+  "price": null,
+  "holders": 3
+ },
+ "XS": {
+  "mint": "3tAQpBy7Sat4ubAXpx8HGNwNGiBC6tGNyZZek4TyjXdT",
+  "name": "xstocks stonks",
+  "liq": null,
+  "price": null,
+  "holders": 1
+ },
+ "Lnch": {
+  "mint": "2CD31FTMQC3W3F7ynshA9A76rry9BfVhpyQWzb4gpump",
+  "name": "Lnch xStocks",
+  "liq": 6.554752770181358,
+  "price": 3.103216777843044e-06,
+  "holders": 1
+ },
+ "777STOCK": {
+  "mint": "7771qUMyZbYDxBiAJD4tgbnAzLk6vFrrGVCpFxwgfgVa",
+  "name": "xStocks Jackpot",
+  "liq": 534.3342064394851,
+  "price": 5.475809260911975e-07,
+  "holders": 72
+ },
+ "XA": {
+  "mint": "CXXcjhrLAGNbM7KbLmRHde6bP7kLoYp8Rh1JcH4Ax4gD",
+  "name": "xStocks Alliance",
+  "liq": null,
+  "price": null,
+  "holders": 1
+ },
+ "XSTOCKS60": {
+  "mint": "CD5sC7KQYRzz9cvHJVWekVNFUeUCVk56J5ibyR9rL4YC",
+  "name": "XSTOCKS60?",
+  "liq": null,
+  "price": null,
+  "holders": 6
+ },
+ "NVREW": {
+  "mint": "6vQGdTZdAN7F6kqQKpfRA3SqX9yJr9TbTgVxZWFw2q9X",
+  "name": "NVIDIA XSTOCKS REWARS",
+  "liq": null,
+  "price": null,
+  "holders": 3
+ },
+ "xSFi": {
+  "mint": "66VyiSYJArMwkMuARTNqr9Uy91ViY3AAMxxmL4Q3pump",
+  "name": "xStocksFi",
+  "liq": null,
+  "price": null,
+  "holders": 7
+ },
+ "SCRIBERS": {
+  "mint": "5vhzeKF2eYwbHXnP5Rw3k4QZb6DdGmC2f95oKYhgHXNN",
+  "name": "Scribe xStocks",
+  "liq": null,
+  "price": null,
+  "holders": 1
+ },
+ "xSH": {
+  "mint": "6t1Y3ger9MqUEzmLBuYwuZvAbQ7GKXiwpkLnnzgMLisj",
+  "name": "xStocksHub",
+  "liq": null,
+  "price": null,
+  "holders": null
+ },
+ "IxSR": {
+  "mint": "89JQAW4Vw38qURErkAAqdfmaFkjLuoBtr7Q23zVTjups",
+  "name": "Infinite xStocks Rewards",
+  "liq": 0.09408893295744176,
+  "price": null,
+  "holders": 2
+ },
+ "Stratton": {
+  "mint": "Gpo2CvTnHMJdwa48EncwYxWvXjJo575CpkZxBbmZ2WNr",
+  "name": "Stratton Oakmond Xstocks",
+  "liq": 46.75147149955628,
+  "price": null,
+  "holders": 6
+ },
+ "XSTOCKSFI": {
+  "mint": "D7Xnrp96Xsp2p224Y4Pqw72qLFGKsqSaNWMwRFSw9nvs",
+  "name": "xStocksFi",
+  "liq": 1.6288993228991872e-07,
+  "price": null,
+  "holders": 65
+ },
+ "FLP.x": {
+  "mint": "HokRUTnsr3FgLj9sq2iw3F6XkPoHn62wytcdNuPZowa7",
+  "name": "Flash xStocks Pool",
+  "liq": null,
+  "price": null,
+  "holders": 12
+ },
+ "xStokcs": {
+  "mint": "CFpD3v1Ed9C4M97T7xdSXhU6GWf73bhX82G5CQsz7Qe6",
+  "name": "xStocks Fnud",
+  "liq": null,
+  "price": null,
+  "holders": 533
+ },
+ "AIF": {
+  "mint": "CrNP21Zk9wG2WmfKfEAsy2zTrEs5TxnazHqvzqKqrrsp",
+  "name": "AI xStocks Fund",
+  "liq": 0.3618914710942315,
+  "price": null,
+  "holders": 14
+ },
+ "XSTOCKs": {
+  "mint": "FfDFN1GSbdmJEm8NTtJkpdTrfmmuAYLthZAk8awyG5WU",
+  "name": "Parallel UNIT XSTOCKSFI",
+  "liq": 0.000762728133746266,
+  "price": null,
+  "holders": 9
+ }
+}

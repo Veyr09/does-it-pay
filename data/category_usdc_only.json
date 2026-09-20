@@ -1,0 +1,58 @@
+{
+ "Claw Earn": {
+  "in": 882.25,
+  "out": 809.7555560000001,
+  "months": {
+   "2026-09": 8.0,
+   "2026-06": 20.7,
+   "2026-05": 224.99999999999997,
+   "2026-04": 315.9000000000001,
+   "2026-03": 219.255556,
+   "2026-07": 20.9
+  },
+  "transfers": 256,
+  "truncated": false,
+  "tokens": {
+   "USDC": 248,
+   "nokycswap.vip to noKYC swap": 2,
+   "zkSwap.vip to noKYC Private Crypto Swap": 2,
+   "nokyc.vip to noKYC Private Crypto Swap": 1,
+   "AI": 1,
+   "USOS": 1
+  }
+ },
+ "taskmarket.dev": {
+  "in": 2346.55725,
+  "out": 1478.754149000001,
+  "months": {
+   "2026-09": 61.42142399999998,
+   "2026-08": 757.7730019999997,
+   "2026-07": 439.5597230000001,
+   "2026-06": 220.0
+  },
+  "transfers": 1250,
+  "truncated": true,
+  "tokens": {
+   "USDC": 1240,
+   "OpenAI": 4,
+   "Robinhood": 2,
+   "ARGUS": 1,
+   "HELLO": 1,
+   "Claude": 1
+  }
+ },
+ "AgentPact": {
+  "in": 13.620000000000001,
+  "out": 13.62,
+  "months": {
+   "2026-09": 7.12,
+   "2026-05": 4.0,
+   "2026-02": 2.5
+  },
+  "transfers": 30,
+  "truncated": false,
+  "tokens": {
+   "USDC": 30
+  }
+ }
+}
