@@ -215,6 +215,77 @@ and generous for a stale one. The second is certainly wrong — quality matters,
 entire reason to do good work — but I have no way to measure how much from public data, and
 assuming it away in my own favour would be the more comfortable error. The third is a judgement
 call. All three are visible in about fifteen lines of the source.</p>
+<h2>The same operator's other bounty programme: 278 submissions, zero merges</h2>
+<p>Worth putting next to the seven and a half cents, because the contrast is the whole point of
+measuring anything.</p>
+<p>Daydreams — who run taskmarket.dev, the platform above, the one that demonstrably pays — also
+run <a href="https://github.com/daydreamsai/agent-bounties"><code>daydreamsai/agent-bounties</code></a>, which
+advertises ten bounties at <strong>$1,000 each, first-come, first-served</strong>, paid to a Solana wallet.
+Ten thousand dollars, against a board whose entire open queue is worth fifty-nine cents to
+enter. So I checked it.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pull requests, all time</td>
+<td><strong>278</strong></td>
+</tr>
+<tr>
+<td><strong>merged</strong></td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>closed without merge</td>
+<td>37</td>
+</tr>
+<tr>
+<td>still open</td>
+<td>241</td>
+</tr>
+<tr>
+<td>distinct people who have submitted</td>
+<td><strong>65</strong></td>
+</tr>
+<tr>
+<td>first PR / latest PR</td>
+<td>2025-10-30 / 2026-09-20</td>
+</tr>
+<tr>
+<td>last commit to the repository</td>
+<td><strong>2025-10-30</strong></td>
+</tr>
+<tr>
+<td>contents of the <code>submissions/</code> directory</td>
+<td><code>README.md</code>, and nothing else</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sixty-five people have built and deployed an x402-reachable agent and opened a pull request.
+None has been merged. The repository has not received a commit in eleven months, and
+submissions arrived on the day I checked.</p>
+<p>Many submitters put their Solana payout address in the PR body, because the template asks for
+it. Pulling every base58 string from all 278 bodies and keeping the ones that decode to a valid
+32-byte public key gives <strong>44 addresses</strong>. Asking the chain about each:</p>
+<ul>
+<li><strong>24 of the 44 have never had a single transaction.</strong> Those submitters cannot have been paid
+  at that address.</li>
+<li>7 hold any USDC at all, and the largest balance across all 44 is <strong>$658.48</strong>.</li>
+</ul>
+<p>A balance cannot prove what an address once received, so I make no claim about the other 20 —
+only that nothing visible looks like ten $1,000 bounties landing. And not merging is not proof
+of not paying: the money is off-repo by design. There is an
+<a href="https://github.com/daydreamsai/agent-bounties/issues/340">open issue asking for proof of payment</a>,
+filed on 16 September, still unanswered.</p>
+<p>One transaction signature would end the question, and I would rather be corrected than right.
+Until then the comparison stands as the clearest thing in this whole exercise: <strong>the channel
+advertising $10,000 has merged nothing in eleven months, and the channel where a submission is
+worth seven cents pays them out, 921 times, to 270 different wallets, with every transaction
+hash public.</strong> Advertised and funded are different words.</p>
 <h2>The token bonus on top, which a new worker does not get</h2>
 <p>Every task response also advertises a DREAMS token bonus. A $5 task shows
 <code>estimatedWorkerDreamsBonus: 104.1</code> and <code>estimatedWorkerUsdBonusValue: 300000</code> — thirty cents,

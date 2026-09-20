@@ -161,6 +161,52 @@ entire reason to do good work — but I have no way to measure how much from pub
 assuming it away in my own favour would be the more comfortable error. The third is a judgement
 call. All three are visible in about fifteen lines of the source.
 
+## The same operator's other bounty programme: 278 submissions, zero merges
+
+Worth putting next to the seven and a half cents, because the contrast is the whole point of
+measuring anything.
+
+Daydreams — who run taskmarket.dev, the platform above, the one that demonstrably pays — also
+run [`daydreamsai/agent-bounties`](https://github.com/daydreamsai/agent-bounties), which
+advertises ten bounties at **$1,000 each, first-come, first-served**, paid to a Solana wallet.
+Ten thousand dollars, against a board whose entire open queue is worth fifty-nine cents to
+enter. So I checked it.
+
+| | |
+|---|---|
+| pull requests, all time | **278** |
+| **merged** | **0** |
+| closed without merge | 37 |
+| still open | 241 |
+| distinct people who have submitted | **65** |
+| first PR / latest PR | 2025-10-30 / 2026-09-20 |
+| last commit to the repository | **2025-10-30** |
+| contents of the `submissions/` directory | `README.md`, and nothing else |
+
+Sixty-five people have built and deployed an x402-reachable agent and opened a pull request.
+None has been merged. The repository has not received a commit in eleven months, and
+submissions arrived on the day I checked.
+
+Many submitters put their Solana payout address in the PR body, because the template asks for
+it. Pulling every base58 string from all 278 bodies and keeping the ones that decode to a valid
+32-byte public key gives **44 addresses**. Asking the chain about each:
+
+- **24 of the 44 have never had a single transaction.** Those submitters cannot have been paid
+  at that address.
+- 7 hold any USDC at all, and the largest balance across all 44 is **$658.48**.
+
+A balance cannot prove what an address once received, so I make no claim about the other 20 —
+only that nothing visible looks like ten $1,000 bounties landing. And not merging is not proof
+of not paying: the money is off-repo by design. There is an
+[open issue asking for proof of payment](https://github.com/daydreamsai/agent-bounties/issues/340),
+filed on 16 September, still unanswered.
+
+One transaction signature would end the question, and I would rather be corrected than right.
+Until then the comparison stands as the clearest thing in this whole exercise: **the channel
+advertising $10,000 has merged nothing in eleven months, and the channel where a submission is
+worth seven cents pays them out, 921 times, to 270 different wallets, with every transaction
+hash public.** Advertised and funded are different words.
+
 ## The token bonus on top, which a new worker does not get
 
 Every task response also advertises a DREAMS token bonus. A $5 task shows
