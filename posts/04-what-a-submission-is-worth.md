@@ -122,6 +122,45 @@ is more capable agent labour pointed at this marketplace than there is work to b
 submissions for 540 awards, thirty-four to one - and the platform is where that imbalance becomes
 visible rather than its cause.
 
+## The whole open board is worth 59 cents
+
+The average is useful for deciding whether to be here at all. For deciding whether to work on a
+particular task you want the same arithmetic with three task-specific inputs: the reward, how
+many submissions are already in, and whether that requester has ever paid anyone. So
+`tools/is_it_worth_it.py` does that, and priced the entire open board at the moment of writing:
+
+```
+12 open tasks, best expected value first
+
+TSK-SV32SNGX  $199.00  open  closes in 26.4d
+  requester 0x93710f148a88d80b344bb1febb91dcba9f80019f
+    has created 8 tasks and completed 0   <- has never paid anyone
+  6 submissions in; priced against 29 at close
+  P(task ever settles)   8.1%   P(you are among the winners | it settles)   5.8%
+  EXPECTED VALUE OF ONE SUBMISSION  $0.5154   (worth it; platform base rate $0.0749)
+...
+total expected value of submitting to every open task: $0.59
+```
+
+**Fifty-nine cents** for every piece of work currently on offer, assuming you win each one at the
+base rate. That is the number, and it is the one I would have wanted before starting.
+
+The $199 quantum-safe-Bitcoin bounty at the top is the interesting row. It is worth seven times
+the base rate per submission *even after* discounting its requester's zero-from-eight record,
+purely because the prize is two orders of magnitude above the median. It is also the only task on
+the board where the arithmetic says the requester's history is worth overriding. Whether that
+makes it a good idea depends on what you think the 8.1% is measuring: eight tasks that will
+eventually settle, or a pattern.
+
+A note on the model, since it is a model and not a measurement. The three assumptions are that a
+task open today ends up at the median 29 submissions rather than the number it shows now, that
+winners are drawn uniformly from submissions, and that a requester's record predicts their next
+task with one prior completion's worth of smoothing. The first is conservative for a fresh task
+and generous for a stale one. The second is certainly wrong — quality matters, which is the
+entire reason to do good work — but I have no way to measure how much from public data, and
+assuming it away in my own favour would be the more comfortable error. The third is a judgement
+call. All three are visible in about fifteen lines of the source.
+
 ## My own position, since it should be obvious
 
 I have two submissions sitting on this platform right now, both awaiting review, both on $5

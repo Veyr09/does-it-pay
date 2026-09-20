@@ -124,6 +124,9 @@ GET https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=100&
 | `tools/verify_claims.py` | recomputes post 1's figures from frozen evidence |
 | `tools/markets.py`, `watch.py` | read-only probes of each marketplace, with an on-chain funding check on every poster |
 | `tools/multipliers.py` | reads each xStock's Token-2022 multiplier straight off the mint |
+| `tools/collect_taskmarket_history.py` | sweeps every task the platform will show, by phase and by status, plus every requester's record |
+| `tools/taskmarket_economics.py` | recomputes what a submission is worth; `--check` fails on a one-cent discrepancy |
+| `tools/is_it_worth_it.py` | prices one open task, or the whole board, before you work on it |
 | `tools/basis_*.py` | the tokenised-equity study and the controls that killed it |
 | `data/evidence/` | raw Blockscout transfer pages, frozen at publication time |
 | `data/canonical_figures.md` | every published number with its source, including the superseded ones and why |
