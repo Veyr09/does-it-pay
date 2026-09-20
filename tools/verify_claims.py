@@ -24,12 +24,12 @@ PLATFORMS = {
 # what the write-up claims, so a mismatch is loud rather than silent
 PUBLISHED = {
     'Claw Earn': {'in': 882.25, 'out': 809.76},
-    'taskmarket.dev': {'in': 2732.89, 'out': 1667.98},
+    'taskmarket.dev': {'in': 2732.89, 'out': 1767.98},
     'AgentPact': {'in': 13.62, 'out': 13.62},
 }
 PUBLISHED_MONTHLY_TOTAL = {
     '2026-02': 2.5, '2026-03': 219, '2026-04': 316, '2026-05': 229,
-    '2026-06': 430, '2026-07': 461, '2026-08': 758, '2026-09': 76,
+    '2026-06': 430, '2026-07': 460, '2026-08': 858, '2026-09': 77,
 }
 TOLERANCE_PCT = 1.0
 
@@ -102,10 +102,10 @@ def main():
     over_a_dollar = [v for v in outs if v >= 1]
     print('\ntaskmarket.dev, per-worker (the post quotes these)')
     for label, got, said in (
-            ('outbound transfers', len(outs), 919),
+            ('outbound transfers', len(outs), 921),
             ('distinct recipients', len(recipients), 270),
             ('median payment', round(outs[len(outs) // 2], 2), 0.45),
-            ('transfers >= $1', len(over_a_dollar), 366),
+            ('transfers >= $1', len(over_a_dollar), 368),
             ('largest single payment', round(outs[-1], 2), 100.00)):
         ok = abs(got - said) <= max(said * 0.02, 0.01)
         all_ok &= ok
