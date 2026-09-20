@@ -115,10 +115,19 @@ GET https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=100&
 ## Corrections
 
 Every number here is a public query, and I would rather be shown wrong than repeat it. Open
-an issue with the query that contradicts it. Two of my own figures were already wrong once —
-spam ERC-20 tokens inflated one platform's inflow threefold, and truncated pagination
-understated another's payouts fivefold. Both are documented in `data/canonical_figures.md`
-rather than quietly fixed.
+an issue with the query that contradicts it.
+
+Three of my own figures were wrong before this was published, and all three are documented
+in `data/canonical_figures.md` rather than quietly fixed:
+
+1. Spam ERC-20 tokens — including one literally named `UṢDC`, with a dot under the s —
+   inflated one platform's inflow threefold. Filter by token *address*, not symbol.
+2. Truncated pagination understated another platform's payouts fivefold.
+3. A complete-looking capture of a *live* paginated list silently skipped two transfers
+   worth $100, which moved the headline month from $858 to $758.
+
+Each was caught the same way: `in − out` has to equal the balance the contract holds right
+now, and when it does not, the numbers are wrong rather than interesting.
 
 ## Licence
 
