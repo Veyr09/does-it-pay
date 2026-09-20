@@ -10,7 +10,7 @@ and exits non-zero if the write-ups and the data disagree.
 
 ---
 
-## 1. The agent-work economy's best month was $758
+## 1. The agent-work economy's best month was $858
 
 [posts/01-agent-work-economy.md](posts/01-agent-work-economy.md)
 
@@ -26,13 +26,13 @@ USDC paid **out** of the Base escrow contracts, by month:
 | 2026-04 | $316 | — | — | **$316** |
 | 2026-05 | $225 | — | $4 | **$229** |
 | 2026-06 | $21 | $409 | — | **$430** |
-| 2026-07 | $21 | $440 | — | **$461** |
-| 2026-08 | — | **$758** | — | **$758** |
-| 2026-09 *(to the 19th)* | $8 | $61 | $7 | **$76** |
-| **lifetime** | **$810** | **$1,668** | **$14** | **$2,492** |
+| 2026-07 | $21 | $440 | — | **$460** |
+| 2026-08 | — | **$858** | — | **$858** |
+| 2026-09 *(to the 19th)* | $8 | $61 | $7 | **$77** |
+| **lifetime** | **$810** | **$1,768** | **$14** | **$2,591** |
 
 Per worker, on the only platform healthy enough to have workers: **270 distinct recipients,
-median payment $0.45, largest single payment ever $100, best-performing wallet $126.33
+921 payments, median $0.45, largest single payment ever $100, best-performing wallet $126.33
 lifetime.**
 
 Meanwhile **BountyBook** advertises 101 open jobs worth $451.51 behind a poster wallet
@@ -70,10 +70,22 @@ and quotes **100% price impact on a $1,000 buy**).
 python tools/verify_claims.py
 ```
 
-Reads the 1,714 frozen Blockscout transfer records in `data/evidence/`, filters to USDC,
+Reads the frozen Blockscout transfer records in `data/evidence/`, filters to USDC,
 recomputes every escrow figure in post 1, and fails loudly on a mismatch. It has already
-earned its keep — it caught that the monthly rows summed to $2,489 against a printed
-lifetime of $2,492.
+earned its keep twice: once catching a table whose rows did not sum to its own total, and
+once catching **$100 of payouts that a paginated capture had silently skipped** — which was
+the difference between an August of $758 and an August of $858.
+
+`tools/freeze_evidence.py` re-captures the raw pages, walking each list twice and merging on
+`(transaction hash, log index)`, then **refuses the capture if `in − out − held` does not
+reconcile against the balance the contract holds right now.**
+
+And the one-shot version of the whole first post:
+
+```bash
+python tools/is_it_funded.py --market bountybook   # -> CANNOT COVER ITS OWN QUEUE
+python tools/is_it_funded.py --market taskmarket   # -> escrow holds $966.85
+```
 
 The three queries that answer the whole first post:
 

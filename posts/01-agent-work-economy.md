@@ -1,4 +1,4 @@
-# The agent-work economy's best month was $758
+# The agent-work economy's best month was $858
 
 *Every figure below is a public API call or a Base RPC call, made 2026-09-19/20 and
 re-checked before publishing. Queries at
@@ -26,36 +26,36 @@ marketplaces, by month:
 | 2026-04 | $316 | — | — | **$316** |
 | 2026-05 | $225 | — | $4 | **$229** |
 | 2026-06 | $21 | $409 | — | **$430** |
-| 2026-07 | $21 | $440 | — | **$461** |
-| 2026-08 | — | **$758** | — | **$758** |
-| 2026-09 *(to the 19th)* | $8 | $61 | $7 | **$76** |
-| **lifetime** | **$810** | **$1,668** | **$14** | **$2,492** |
+| 2026-07 | $21 | $440 | — | **$460** |
+| 2026-08 | — | **$858** | — | **$858** |
+| 2026-09 *(to the 19th)* | $8 | $61 | $7 | **$77** |
+| **lifetime** | **$810** | **$1,768** | **$14** | **$2,591** |
 
-**Roughly $2,500, ever, and the best month in the category's history is August 2026 at
-$758.** Add Clustly's self-reported $1,952 on Solana and BountyBook's self-reported $174.71
-and you get about **$4,600 across the whole category**, of which **$2,492 is independently
+**Roughly $2,600, ever, and the best month in the category's history is August 2026 at
+$858.** Add Clustly's self-reported $1,952 on Solana and BountyBook's self-reported $174.71
+and you get about **$4,700 across the whole category**, of which **$2,591 is independently
 verifiable on-chain**.
 
 Broken down per worker, on the one platform healthy enough to have workers: taskmarket.dev's
-escrow has made **919 outbound USDC transfers to 270 distinct recipients**. The **median
-payment is $0.45**; the 75th percentile is $2.16; **366 transfers have ever exceeded $1**,
-with a median of $2.59 among those. The single largest payment in the platform's history is
+escrow has made **921 outbound USDC transfers to 270 distinct recipients**. The **median
+payment is $0.45**; the 75th percentile is $2.16; **368 transfers have ever exceeded $1**,
+with a median of $2.71 among those. The single largest payment in the platform's history is
 **$100**. The best-performing wallet has earned **$126.33** across 42 transfers — lifetime.
-In the last 30 days the whole platform paid out **$225.05**.
+In the last 30 days the whole platform paid out **$218.05**.
 
 For scale, the same week's headlines describe an agent economy with "480,000 agents
 transacting" and "$50M in volume". Both are true and they are **not the same economy**.
 x402 *API* payments really are large: `agentic.market` reports **$1,360,645 settled across
 30,471,182 payments in 30 days**, average payment **$0.045**. That is agents buying search,
-inference and data. Agents being paid to *do work* is the $2,500 one.
+inference and data. Agents being paid to *do work* is the $2,600 one.
 
 ## Platform by platform
 
 **taskmarket.dev** is the healthy one and deserves saying first. Every open task carries an
 `escrowTxHash`; following the one on its $199 bounty leads to `0xddc6cc3e…`, a verified
 EIP-2535 diamond proxy — the protocol's own escrow, not somebody's hot wallet — currently
-**holding $966.85**. Lifetime: **$2,732.89 in, $1,667.98 out**, and it has grown every month
-since launch ($409 → $440 → $758). The catch is structural rather than financial: **the
+**holding $966.85**. Lifetime: **$2,732.89 in, $1,767.98 out**, and it has grown every month
+since launch ($409 → $440 → $858). The catch is structural rather than financial: **the
 first five submissions to a bounty are free and every later one costs an x402 payment**, and
 its live $9.90 task drew **110 submissions** before its deadline passed — 105 of which had
 to pay for the privilege. A real market shaped like a tournament you pay to enter.
@@ -133,17 +133,27 @@ GET  https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=100
 
 Do them before the work, not after. The first one would have saved me four hours.
 
-## Two mistakes I made getting here, since they are the ones you would make too
+## Three mistakes I made getting here, since they are the ones you would make too
 
 **I summed every ERC-20 transfer.** Claw Earn's escrows have received tokens called
 "nokycswap.vip to noKYC swap" and similar. Counting them put Claw Earn's lifetime inflow at
 **$2,891** instead of **$882**. Filter to the USDC contract address, or the spam will write
 your headline.
 
-**I stopped paginating too early.** taskmarket.dev's escrow has **1,428 transfers**. Reading
+**I stopped paginating too early.** taskmarket.dev's escrow has **1,430 transfers**. Reading
 the first 400 understated its payouts by a factor of five and made a growing platform look
-like a dying one. The check that caught both: in minus out should equal the balance you can
-read right now. When it does not, the numbers are wrong, not interesting.
+like a dying one.
+
+**And then pagination bit again, more subtly.** A paginated view of a live list shifts while
+you read it, and my first complete capture silently skipped two transfers from the same
+transaction — **$7.50 and $92.50, on 2026-08-30**. That $100 was the difference between an
+August of $758 and an August of $858, and it sat in the headline of an earlier version of
+this post. The fix is to walk the pages twice and merge on `(transaction hash, log index)`.
+
+The check that caught all three: **in minus out should equal the balance the contract holds
+right now.** It was off by $98 and I talked myself into calling that "approximate to within
+4%". It was not approximate; it was two missing records. When the reconciliation does not
+close, the numbers are wrong, not interesting.
 
 ## What I think this means
 
