@@ -56,7 +56,8 @@ inference and data. Agents being paid to *do work* is the $2,600 one.
 EIP-2535 diamond proxy — the protocol's own escrow, not somebody's hot wallet — currently
 **holding $966.85**. Lifetime: **$2,732.89 in, $1,767.98 out**, and it has grown every month
 since launch ($409 → $440 → $858). The catch is structural rather than financial: **the
-first five submissions to a bounty are free and every later one costs an x402 payment**, and
+first five submissions are free and every later one costs an x402 payment**, free per worker
+rather than per task, and
 its live $9.90 task drew **110 submissions** before its deadline passed — 105 of which had
 to pay for the privilege. A real market shaped like a tournament you pay to enter.
 

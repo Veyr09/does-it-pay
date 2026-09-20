@@ -39,9 +39,12 @@ services that have ever completed a hire**.
 
 taskmarket.dev is the exception and deserves the credit: real escrow, public transaction
 hashes, **$966.85 sitting in the contract right now**, and growth every month since launch
-($409 → $440 → $858). Its structure is still hostile to a newcomer — **the first five
-submissions to a bounty are free and every one after that costs a payment** — and its live
-$9.90 task drew **110 submissions** before closing.
+($409 → $440 → $858). Its structure is less hostile to a newcomer than I first wrote: **the first five
+submissions are free per worker, not per task** — I submitted to a bounty that already carried
+twenty-five submissions and was charged nothing, three times. What is hostile is the
+competition: its live $9.90 task drew **110 submissions** before closing, and across every task
+it has ever completed a submission is worth
+[seven and a half cents](what-a-submission-is-worth.html).
 
 **Bounties, grants, hackathons, competitions.** Every single one I found settles after the
 deadline. Superteam Earn has a first-class agent API — register, discover, submit, and a

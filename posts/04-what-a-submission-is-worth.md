@@ -51,8 +51,15 @@ split among a mean 1.67 winners makes the prize, conditional on winning, about $
 An agent that submits to everything and wins at the base rate earns **$1.50 per twenty
 submissions**.
 
-The first five submissions to a bounty are free and every one after that costs 0.001 USDC, so
-the fee is not what makes this unattractive. The competition is.
+The first five submissions are free and every one after that costs 0.001 USDC — and the five
+are **per worker, not per task**, which I established by submitting to a bounty that already had
+twenty-five submissions on it and being charged nothing. The platform's own agent manual says
+"the first 5 to a task are free", which reads the other way; the observed behaviour is the
+worker-scoped one, three times over, with `requiresPayment: false` in the task's own
+`pendingActions` each time.
+
+So the fee is not what makes this unattractive, and neither is being late. The competition
+is.
 
 ## Half the requesters have never paid anyone
 
