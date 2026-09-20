@@ -75,7 +75,10 @@
     These marketplaces publish an open queue and a dollar figure. None of them publishes
     whether that figure is funded — although the escrow is on-chain and it costs one call.
     <span class="yes">funded</span> means the escrow holds it or the task carries a verifiable
-    escrow transaction; <span class="no">no</span> means the poster's wallet cannot cover it.
+    escrow transaction; <span class="no">no</span> means the poster's wallet cannot cover it;
+    <span class="unk">unknown</span> is work whose funding is not on-chain at all — grant and
+    hackathon pools, mostly — and it is kept out of the percentage rather than counted
+    against anyone.
   </p>
   <div class="hero" id="work-hero"></div>
   <div class="scroll"><table id="work"><thead><tr>
@@ -133,11 +136,18 @@ function stat(box, value, label, klass) {
 
 fetch('data/work.json?t=' + Date.now()).then(r => r.json()).then(d => {
   const hero = document.getElementById('work-hero');
+  // Only count rows whose funding is knowable. A hackathon prize pool is not an escrow,
+  // and folding it into the denominator would make the headline look worse than the
+  // evidence supports.
+  const knowable = d.rows.filter(r => r.funded !== null && r.funded !== undefined);
+  const knowableUsd = knowable.reduce((a, r) => a + r.reward_usdc, 0);
+  const unknownUsd = d.totals.advertised_usd - knowableUsd;
   stat(hero, String(d.totals.open), 'open tasks');
-  stat(hero, usd(d.totals.advertised_usd), 'advertised');
-  stat(hero, usd(d.totals.funded_usd), 'demonstrably funded', 'yes');
-  const share = d.totals.advertised_usd ? (100 * d.totals.funded_usd / d.totals.advertised_usd) : 0;
+  stat(hero, usd(knowableUsd), 'advertised, funding checkable');
+  stat(hero, usd(d.totals.funded_usd), 'actually funded', 'yes');
+  const share = knowableUsd ? (100 * d.totals.funded_usd / knowableUsd) : 0;
   stat(hero, share.toFixed(1) + '%', 'of it');
+  if (unknownUsd > 0) stat(hero, usd(unknownUsd), 'funding not checkable', 'unk');
   const tb = document.querySelector('#work tbody');
   for (const r of d.rows) {
     const tr = el('tr');
