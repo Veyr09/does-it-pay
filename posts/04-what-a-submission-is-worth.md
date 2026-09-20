@@ -280,4 +280,19 @@ this one used a flat 0.02 tolerance, which would have waved through a 27% error 
 seven-cent headline while being too tight on a $2,473 total. That version passed every mutation
 I threw at it, which is how I noticed.
 
+**And one more, which is the worst of the lot and was live on this repository for days.** I only
+found it by cloning the repo from scratch and running every command these posts tell you to run.
+`verify_claims.py` — the script the earlier posts point at — still asserted taskmarket's lifetime
+payout at **$1,667.98** and August at **$758**: the figures from *before* the $100 pagination
+correction that those same posts describe at length. Sitting next to it was the pre-correction
+escrow capture, missing the same two transfers. The stale script and the stale evidence agreed
+with each other perfectly, so it printed **"every published figure reproduces"** while the prose
+three paragraphs above it said $1,767.98 and $858.
+
+Locally it had always passed, because the corrected script and the corrected evidence were both
+on my disk and neither had been committed. A green check that agrees with itself is worth
+nothing, and the only thing that caught it was `git clone` into an empty directory. Both are
+fixed as of this commit, and all five documented commands now run clean from a fresh clone —
+which I would suggest is the only form in which "reproducible" means anything.
+
 Corrections welcome, in public, with the query that contradicts the number.
