@@ -1,0 +1,35 @@
+{
+ "captured_utc": "2026-09-20T132636Z",
+ "token": "0x176383016BB310C9f1C180DC6729d5E28104e602",
+ "dreams_per_usdc": 347.0,
+ "implied_usd": 0.002881844380403458,
+ "dex_mid_usd": 0.002202,
+ "total_liquidity_usd": 1186.3400000000001,
+ "volume_24h_usd": 514.99,
+ "pairs": [
+  {
+   "dex": "uniswap",
+   "pair": "0x46aba10ef2784c3145a6c9118e35ca4e1fcc2c9bed6675d1be6e75536d16c5b1",
+   "quote": "USDC",
+   "priceUsd": "0.002182",
+   "liquidityUsd": 508.41,
+   "volume24h": 5.46
+  },
+  {
+   "dex": "uniswap",
+   "pair": "0x077e6f515b3a35830a6c94e048291b4b9db827503dcef7c47c3c29a06d4448ab",
+   "quote": "USDC",
+   "priceUsd": "0.002222",
+   "liquidityUsd": 152.91,
+   "volume24h": 0.54
+  },
+  {
+   "dex": "aerodrome",
+   "pair": "0x2Ad6252a9B295733fd90d9a233e768985EE4b98E",
+   "quote": "WETH",
+   "priceUsd": "0.000000000000000000000000000000000007593",
+   "liquidityUsd": 525.02,
+   "volume24h": 508.99
+  }
+ ]
+}
