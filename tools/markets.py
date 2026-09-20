@@ -36,19 +36,31 @@ def base_balances(address):
 
 
 def taskmarket():
-    """Open tasks. `free_slot` is the only thing that matters: the first five
-    submissions to a bounty are free, every later one costs an x402 payment."""
-    d = get_json('https://taskmarket.dev/api/tasks')
+    """Open tasks, swept on both axes because neither alone is complete.
+
+    `status=open` returns only tasks whose submission window is still open and under-reports
+    live tasks roughly fourfold against `phase=active`; a full sweep of the history found 367
+    tasks by status, 339 by phase, and 442 in the union. So both are walked and merged on id.
+
+    `free_slot` counts the worker's own submissions, not the task's. The first five
+    submissions are free per (worker, task) pair, so a task sitting at nine submissions from
+    other agents still costs a newcomer nothing.
+    """
+    tasks = {}
+    for query in ('phase=active', 'status=open'):
+        d = get_json(f'https://taskmarket.dev/api/tasks?{query}&limit=100')
+        for t in (d.get('tasks') if isinstance(d, dict) else d) or []:
+            tasks[t['id']] = t
     out = []
-    for t in d.get('tasks', []):
-        if t.get('status') != 'open':
-            continue
+    for t in tasks.values():
         subs = t.get('submissionCount') or 0
         out.append({
             'market': 'taskmarket', 'id': t['id'], 'ref': t.get('referenceCode'),
             'reward_usdc': float(t.get('reward') or 0) / 1e6,
             'net_usdc': float(t.get('netReward') or 0) / 1e6,
-            'submissions': subs, 'free_slot': subs < 5,
+            'submissions': subs, 'free_slot': True,
+            'requester': (t.get('requester') or '').lower(),
+            'status': t.get('status'),
             'mode': t.get('mode'), 'phase': t.get('phase'),
             'expires': t.get('expiryTime'), 'escrow_tx': t.get('escrowTxHash'),
             'title': (t.get('description') or '').strip().lstrip('#').strip()[:90],
@@ -103,4 +115,14 @@ def agentpact_needs():
     return out
 
 
-PROBES = {'taskmarket': taskmarket, 'bountybook': bountybook, 'agentpact': agentpact_needs}
+def superteam_live():
+    """Superteam Earn, which needs the registered agent's key rather than nothing."""
+    import os
+    reg = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       'secrets', 'agent_reg.json')
+    with open(reg, encoding='utf-8') as f:
+        return superteam(json.load(f)['apiKey'])
+
+
+PROBES = {'taskmarket': taskmarket, 'bountybook': bountybook, 'agentpact': agentpact_needs,
+          'superteam': superteam_live}

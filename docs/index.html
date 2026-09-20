@@ -84,9 +84,18 @@
     hackathon pools, mostly — and it is kept out of the percentage rather than counted
     against anyone.
   </p>
+  <p class="note">
+    <strong>worth</strong> is the second question and the one that decides whether to work:
+    what one submission to that task is worth in expectation, from the reward, the submissions
+    already in, and whether that requester has <em>ever</em> paid anyone. Across every task
+    taskmarket.dev has completed, a submission is worth $0.0749 and 2.94% of submissions are
+    awarded anything — <a href="what-a-submission-is-worth.html">the write-up</a> has the
+    method, and the total below is the whole open board added up.
+  </p>
   <div class="hero" id="work-hero"></div>
   <div class="scroll"><table id="work"><thead><tr>
-    <th>market</th><th>reward</th><th>funded</th><th>free slot</th><th>subs</th><th class="t">task</th>
+    <th>market</th><th>reward</th><th>funded</th><th>worth</th><th>requester paid</th>
+    <th>subs</th><th class="t">task</th>
   </tr></thead><tbody></tbody></table></div>
 </section>
 
@@ -162,6 +171,11 @@ fetch('data/work.json?t=' + Date.now()).then(r => r.json()).then(d => {
   const share = knowableUsd ? (100 * d.totals.funded_usd / knowableUsd) : 0;
   stat(hero, share.toFixed(1) + '%', 'of it');
   if (unknownUsd > 0) stat(hero, usd(unknownUsd), 'funding not checkable', 'unk');
+  if (d.totals.board_ev_usd != null) {
+    stat(hero, '$' + d.totals.board_ev_usd.toFixed(2),
+         'what the whole board is worth to enter',
+         d.totals.board_ev_usd >= 1 ? null : 'no');
+  }
   const tb = document.querySelector('#work tbody');
   for (const r of d.rows) {
     const tr = el('tr');
@@ -169,13 +183,19 @@ fetch('data/work.json?t=' + Date.now()).then(r => r.json()).then(d => {
     tr.append(el('td', null, usd(r.reward_usdc)));
     tr.append(el('td', r.funded === true ? 'yes' : r.funded === false ? 'no' : 'unk',
                  r.funded === true ? 'funded' : r.funded === false ? 'no' : 'unknown'));
-    tr.append(el('td', null, r.free_slot === true ? 'yes' : r.free_slot === false ? 'no' : '—'));
+    // Priced only where a requester's record exists to price it against.
+    tr.append(r.ev_usd == null ? el('td', 'unk', '—')
+              : el('td', r.ev_usd >= d.totals.base_ev_usd ? 'yes' : 'no',
+                   '$' + r.ev_usd.toFixed(4)));
+    tr.append(r.requester_created == null ? el('td', 'unk', '—')
+              : el('td', r.requester_completed > 0 ? 'yes' : 'no',
+                   r.requester_completed + ' of ' + r.requester_created));
     tr.append(el('td', null, r.submissions == null ? '—' : r.submissions));
     tr.append(el('td', 't', r.title.replace(/</g, '&lt;')));
     tb.append(tr);
   }
 }).catch(e => document.querySelector('#work tbody').append(
-  el('tr', null, '<td colspan="6" class="unk">work panel unavailable: ' + e + '</td>')));
+  el('tr', null, '<td colspan="7" class="unk">work panel unavailable: ' + e + '</td>')));
 
 fetch('data/basis.json?t=' + Date.now()).then(r => r.json()).then(d => {
   const hero = document.getElementById('basis-hero');
