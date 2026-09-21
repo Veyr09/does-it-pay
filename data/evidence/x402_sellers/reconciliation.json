@@ -1,0 +1,136 @@
+{
+ "captured_utc": "2026-09-21T151756Z",
+ "window_start": "2026-09-14T14:48:15",
+ "window_end": "2026-09-21T14:45:31",
+ "sellers_published": 5295,
+ "band": [
+  20,
+  300
+ ],
+ "drift_allowance_tx": 1,
+ "consistent": 15,
+ "exceeds": 0,
+ "not_counted": 1,
+ "rows": [
+  {
+   "recipient": "0x1f81da453901d15296c1710af83e0bc0371d39f1",
+   "claim_tx": 296,
+   "chain_tx": 344,
+   "claim_usd": 14.64,
+   "chain_usd": 16.92,
+   "consistent": true
+  },
+  {
+   "recipient": "0xdb5aa553feeb2c3e3d03e8360b36fb0f7e480671",
+   "claim_tx": 294,
+   "chain_tx": 301,
+   "claim_usd": 6.367,
+   "chain_usd": 6.415,
+   "consistent": true
+  },
+  {
+   "recipient": "0x13e060adcc6f4b731da8382b333027b8b2bff707",
+   "claim_tx": 288,
+   "chain_tx": 287,
+   "claim_usd": 2.88,
+   "chain_usd": 2.87,
+   "consistent": true
+  },
+  {
+   "recipient": "0xe82ebef57fa5af958b8ecb6843d4327d314f59e3",
+   "claim_tx": 274,
+   "chain_tx": 311,
+   "claim_usd": 1.105,
+   "chain_usd": 1.245,
+   "consistent": true
+  },
+  {
+   "recipient": "0x2b6d4988db4723e6908db86ab2b8dfbc51fc32c5",
+   "claim_tx": 250,
+   "chain_tx": 265,
+   "claim_usd": 7.466098,
+   "chain_usd": 7.833598,
+   "consistent": true
+  },
+  {
+   "recipient": "0xdb5c2df47e4a6df74edeb6de3159ae38b8cc10fd",
+   "claim_tx": 247,
+   "chain_tx": 277,
+   "claim_usd": 24.7,
+   "chain_usd": 27.7,
+   "consistent": true
+  },
+  {
+   "recipient": "0xd8ba61a0b0974db0ec8e325c7628470526558e9b",
+   "claim_tx": 235,
+   "chain_tx": 274,
+   "claim_usd": 37.63,
+   "chain_usd": 42.72979,
+   "consistent": true
+  },
+  {
+   "recipient": "0xf22e558a00d91ee12a1f50c52186fecb8ddff493",
+   "claim_tx": 235,
+   "chain_tx": 243,
+   "claim_usd": 2.366,
+   "chain_usd": 2.395,
+   "consistent": true
+  },
+  {
+   "recipient": "0x2c871c2b8876dc35e9e19646fda5abf1cd27735f",
+   "claim_tx": 234,
+   "chain_tx": 235,
+   "claim_usd": 2.858161,
+   "chain_usd": 2.858176,
+   "consistent": true
+  },
+  {
+   "recipient": "0xe740d5701749d262da5e4fcb9f814c5b6d91cf46",
+   "claim_tx": 229,
+   "chain_tx": 239,
+   "claim_usd": 33.11,
+   "chain_usd": 41.71,
+   "consistent": true
+  },
+  {
+   "recipient": "0xb3f4de103f34b99f0da19b4f16d6b53a14c2194a",
+   "claim_tx": 222,
+   "chain_tx": 223,
+   "claim_usd": 2.458,
+   "chain_usd": 2.464,
+   "consistent": true
+  },
+  {
+   "recipient": "0x4122ce224f5947b39289f2c78f9a7434308b6ef1",
+   "claim_tx": 217,
+   "chain_tx": 263,
+   "claim_usd": 0.217,
+   "chain_usd": 0.263,
+   "consistent": true
+  },
+  {
+   "recipient": "0x8c128f1ee62bb5e47867cfbae2ad89be325df1b2",
+   "claim_tx": 204,
+   "chain_tx": 211,
+   "claim_usd": 3.815,
+   "chain_usd": 4.135,
+   "consistent": true
+  },
+  {
+   "recipient": "0x29322ea7ecb34aa6164cb2ddeb9ce650902e4f60",
+   "claim_tx": 203,
+   "chain_tx": 210,
+   "claim_usd": 1.72,
+   "chain_usd": 1.76,
+   "consistent": true
+  },
+  {
+   "recipient": "0x942bd3e3073543c674efc0c378d5bce20f9120c1",
+   "claim_tx": 201,
+   "chain_tx": 215,
+   "claim_usd": 42.0,
+   "chain_usd": 46.6,
+   "consistent": true
+  }
+ ]
+}

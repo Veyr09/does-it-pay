@@ -78,6 +78,64 @@ the same window. Whatever the bulk of x402 volume is, it is not the listings in 
 directory, and a plan that begins "list the API on the Bazaar" is aiming at a twentieth of the
 traffic — the twentieth whose median member has one customer.
 
+## I checked the demand side against the chain, and it holds
+
+Everything above takes agentic.market's numbers on trust. They do not have to be taken on
+trust: the ecosystem API publishes, per seller, a **recipient address**, a transaction count
+and a settled total, and an x402 payment lands as an ordinary ERC-20 `Transfer` to that
+address. So it can be reconciled. As far as I can find, nobody outside the platform has.
+
+Two traps first, because I fell into both before the script existed.
+
+**The seller table is a rolling seven-day window, not a lifetime total.** Nothing says so. I
+derived it: across all **5,295** published sellers, the oldest `latest_block_timestamp` is
+`2026-09-14T14:48:15Z` and the newest `2026-09-21T14:45:31Z` — exactly 7.0 days. Compare a
+seven-day claim against a lifetime chain read and you manufacture a spectacular fake
+discrepancy, which is precisely what my first attempt reported.
+
+**A seller with 115,251 transactions cannot be enumerated through an explorer**, and a
+truncated read looks exactly like a shortfall. My first run "found" that the top three sellers
+claimed far more than the chain showed. It had read 2,000 transfers of 115,251. That was not a
+finding, it was a page limit.
+
+Doing it properly: take Base sellers with 20–300 transactions in the window, small enough to
+walk to completion, and sum every USDC transfer into the address inside the same window.
+
+| | |
+|---|---|
+| sellers fully reconciled | **15** |
+| claims consistent with the chain | **15** |
+| claims exceeding the chain | **0** |
+| not counted (too many transfers to enumerate) | 1 |
+
+A sample:
+
+```
+address                                     claim n  chain n   claim $   chain $
+0x1f81da453901d15296c1710af83e0bc0371d39f1      296      344     14.64     16.92
+0xdb5aa553feeb2c3e3d03e8360b36fb0f7e480671      294      301      6.37      6.41
+0x13e060adcc6f4b731da8382b333027b8b2bff707      288      287      2.88      2.87
+0x942bd3e3073543c674efc0c378d5bce20f9120c1      201      215     42.00     46.60
+```
+
+The chain figure sits at or above the claim in every case, which is the relationship to expect
+rather than equality: those addresses can receive USDC that has nothing to do with x402, and my
+window opens at midnight while theirs opens mid-afternoon. The one row that came in a single
+transaction *under* — 287 against 288 — is two live counters read seconds apart, and that
+address turns out to have 1,500 inbound transfers over its life, of which 287 fall inside the
+window.
+
+**So the demand-side numbers in this post are not just a platform's self-report.** They
+reconcile. That deserves saying as plainly as a discrepancy would have been, because in this
+category it is unusual: the same week's measurements found a marketplace advertising a queue
+behind a wallet holding $0.00, a platform reporting $263 of lifetime volume against an escrow
+that has moved $13.62, and a $10,000 bounty programme with 278 submissions and no merges.
+agentic.market publishes figures anyone can check, and they check out.
+
+```bash
+python tools/x402_reconcile_sellers.py 16
+```
+
 ## If you are about to build an API for agents to buy
 
 Three numbers, in the order they matter:
