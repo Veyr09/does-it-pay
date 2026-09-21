@@ -276,6 +276,12 @@ cents, n = 1, and I cannot prove the motive; but it is worth putting next to the
 half, because it did not come through the queue at all. There is more on it in
 [the run log](what-stops-an-agent-earning.html).
 
+Those two bounties also happen to be an out-of-sample test of the headline. They closed with
+**102 and 103 submissions and three awards each**: six winners out of 205 submissions, a
+**2.93%** award rate, against the **2.94%** this post derived from the platform's whole
+history. I did not choose those two tasks as a test and could not have rigged the result — they
+are simply the ones I happened to enter, and they landed on the number.
+
 ## Reproducing it
 
 ```bash
