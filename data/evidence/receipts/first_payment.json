@@ -1,0 +1,16 @@
+{
+ "captured_utc": "2026-09-21T145821Z",
+ "chain": "base",
+ "token": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+ "symbol": "USDC",
+ "tx": "0x7ef08add3cf955845f4d390da705a34037f72d9513e1ca6cf527586333cd8a45",
+ "block": 51606474,
+ "block_time_utc": "2026-09-21T14:51:35Z",
+ "from": "0xd8f5bb747f7459bf3e1cc1ad041e2ca57b946c38",
+ "to": "0xc76CBD564d60E760e9d3B0A99c96b2ea35EEB7CB",
+ "amount_usdc": 0.05,
+ "raw_units": 50000,
+ "status": "0x1",
+ "payer_identification": "same EOA that posts MolTrust credential batch anchors on Base, verified against anchor tx 0x0fc09fb83cdb3d250385aac1bc2e9e8d1973eb078a5a976006307e3b6d777e13",
+ "route": "direct ERC-20 transfer, not a taskmarket escrow award; taskmarket stats still report completedTasks 0 and totalEarnings 0"
+}
