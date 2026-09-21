@@ -24,6 +24,11 @@ PLATFORM_FEE_BPS = 750
 # Platform-wide base rates, from tools/taskmarket_economics.py over the frozen capture.
 BASE_AWARDS_PER_TASK = 540 / 323      # mean winners on a completed task
 BASE_EV_PER_SUBMISSION = 0.0749
+# The platform mean is 1.67 winners a task, but it is a mixture: some requesters split a
+# bounty three ways and others always pick exactly one. Using the mixture for a requester
+# whose every task has a single winner overstates a submission by about 70 per cent, so
+# where a requester has a record of their own, use it.
+MIN_TASKS_FOR_OWN_RATE = 3
 # A task still open attracts more submissions before it closes. Median submissions on a
 # completed task is 29, so a task sitting at 3 today is not a 3-way race.
 MEDIAN_FINAL_SUBMISSIONS = 29
@@ -41,6 +46,30 @@ def unwrap(d):
     return d.get('data', d) if isinstance(d, dict) else d
 
 
+def requester_awards_per_task(requester):
+    """Mean winners on this requester's own completed tasks, if they have enough of a record.
+
+    Read from their completed tasks rather than assumed: a requester who always picks one
+    winner is a very different proposition from one who splits three ways.
+    """
+    seen, cursor, pages = {}, None, 0
+    while pages < 12:
+        url = f'{API}/tasks?status=completed&limit=100' + (f'&cursor={cursor}' if cursor else '')
+        d = unwrap(get(url))
+        rows = (d.get('tasks') if isinstance(d, dict) else d) or []
+        for t in rows:
+            if (t.get('requester') or '').lower() == requester:
+                seen[t['id']] = t              # dedupe: a repeated page must not be counted twice
+        cursor = d.get('nextCursor') if isinstance(d, dict) else None
+        pages += 1
+        if not cursor or not rows:
+            break
+    awarded = [t.get('awardCount') or 0 for t in seen.values() if (t.get('awardCount') or 0) > 0]
+    if len(awarded) < MIN_TASKS_FOR_OWN_RATE:
+        return None, len(awarded)
+    return sum(awarded) / len(awarded), len(awarded)
+
+
 def price(task):
     """Expected value of adding one submission to this task, and why."""
     reward = int(task.get('reward') or 0) / 1e6
@@ -49,6 +78,8 @@ def price(task):
     rs = unwrap(get(f'{API}/requester/{requester}/stats')) or {}
     created = rs.get('totalTasksCreated', 0)
     completed = rs.get('completedCount', 0)
+    own_rate, own_n = requester_awards_per_task(requester)
+    awards_per_task = own_rate if own_rate else BASE_AWARDS_PER_TASK
 
     # A requester with no history gets the platform base rate rather than 0% or 100%, with
     # one prior completion's worth of weight. Their own record dominates once they have one.
@@ -59,13 +90,15 @@ def price(task):
 
     final_subs = max(subs_now + 1, MEDIAN_FINAL_SUBMISSIONS)
     pool = reward * (1 - PLATFORM_FEE_BPS / 10000)
-    p_win = min(1.0, BASE_AWARDS_PER_TASK / final_subs)
-    ev = p_settles * p_win * (pool / max(1.0, BASE_AWARDS_PER_TASK))
+    p_win = min(1.0, awards_per_task / final_subs)
+    ev = p_settles * p_win * (pool / max(1.0, awards_per_task))
     return {
         'ref': task.get('referenceCode'), 'id': task['id'], 'reward': reward,
         'subs_now': subs_now, 'assumed_final_subs': final_subs,
         'requester': requester, 'requester_created': created, 'requester_completed': completed,
         'p_settles': p_settles, 'p_win_if_settles': p_win, 'pool': pool, 'ev': ev,
+        'awards_per_task': round(awards_per_task, 2), 'awards_basis': 
+            f'this requester, {own_n} completed tasks' if own_rate else 'platform mean',
         'expiry': task.get('expiryTime'), 'status': task.get('status'),
     }
 
@@ -92,7 +125,8 @@ def show(r):
     print(f"  {r['subs_now']} submissions in; priced against {r['assumed_final_subs']} at close")
     print(f"  P(task ever settles) {r['p_settles']*100:5.1f}%   "
           f"P(you are among the winners | it settles) {r['p_win_if_settles']*100:5.1f}%")
-    print(f"  worker pool ${r['pool']:.2f}, mean {BASE_AWARDS_PER_TASK:.2f} winners")
+    print(f"  worker pool ${r['pool']:.2f}, {r['awards_per_task']:.2f} winners "
+          f"({r['awards_basis']})")
     print(f"  EXPECTED VALUE OF ONE SUBMISSION  ${r['ev']:.4f}   "
           f"({verdict}; platform base rate ${BASE_EV_PER_SUBMISSION:.4f})\n")
 

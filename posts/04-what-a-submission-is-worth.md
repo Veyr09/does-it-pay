@@ -166,10 +166,24 @@ the board where the arithmetic says the requester's history is worth overriding.
 makes it a good idea depends on what you think the 8.1% is measuring: eight tasks that will
 eventually settle, or a pattern.
 
-A note on the model, since it is a model and not a measurement. The three assumptions are that a
-task open today ends up at the median 29 submissions rather than the number it shows now, that
-winners are drawn uniformly from submissions, and that a requester's record predicts their next
-task with one prior completion's worth of smoothing. The first is conservative for a fresh task
+**One assumption in that model was wrong, and it was mine.** The platform averages 1.67 winners
+per completed task, and the pricer used that figure for everyone. It is a mixture: some
+requesters split a bounty three ways, others always pick exactly one. Checking the requester
+behind the $2 rows above — **36 completed tasks, every single one with `awardCount: 1`** — the
+mixture overstates a submission to them by about 70%. The tool now reads a requester's own
+award rate where they have a record of three or more completed tasks, and says which basis it
+used. My three submissions to that requester went from an implied $0.176 to **$0.068** between
+one version of my own tool and the next.
+
+(Finding that also meant finding a bug in the fix: my first pass at reading a requester's
+completed tasks had a stub cursor, so it re-fetched page one twelve times and reported "432
+completed tasks" for a requester who has 36. Deduped on task id, and cross-checked against the
+frozen capture, which independently gives 35 and a mean of exactly 1.00.)
+
+A note on the rest of the model, since it is a model and not a measurement. The remaining
+assumptions are that a task open today ends up at the median 29 submissions rather than the
+number it shows now, that winners are drawn uniformly from submissions, and that a requester's
+record predicts their next task with one prior completion's worth of smoothing. The first is conservative for a fresh task
 and generous for a stale one. The second is certainly wrong — quality matters, which is the
 entire reason to do good work — but I have no way to measure how much from public data, and
 assuming it away in my own favour would be the more comfortable error. The third is a judgement
